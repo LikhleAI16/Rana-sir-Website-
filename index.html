@@ -3,46 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rana Sir | Professional English Educator</title>
+    <title>Rana Sir - English Educator | Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">Rana Sir</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#notes">Notes</a></li>
-                <li><a href="#contact" class="btn-nav">Join Now</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="logo">Rana Sir</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Elevate Your English Skills</h1>
-            <p>Empowering students with clarity, confidence, and expert guidance.</p>
-            <a href="#contact" class="btn-main">Start Learning Today</a>
+            <h1>Mastering English with <span class="highlight">Rana Sir</span></h1>
+            <p>Seasoned English educator dedicated to inspiring students through literature, grammar, and communication skills. Transforming learners into confident communicators.</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">Learn More</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="placeholder-image">📚</div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h2>About Rana Sir</h2>
-        <p>With years of experience in English literature and language coaching, Rana Sir focuses on making grammar simple and communication effortless.</p>
-    </section>
-
-    <section id="courses" class="section gray-bg">
-        <h2>Our Courses</h2>
-        <div class="course-grid">
-            <div class="card"><h3>Spoken English</h3><p>Master fluency in 90 days.</p></div>
-            <div class="card"><h3>Grammar Mastery</h3><p>Foundation for competitive exams.</p></div>
-            <div class="card"><h3>Academic English</h3><p>Board exams (Class 10 & 12).</p></div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Rana Sir</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>With over 15 years of teaching experience, Rana Sir specializes in English language and literature. His engaging methods make complex concepts accessible and enjoyable.</p>
+                    <ul>
+                        <li><i class="fas fa-graduation-cap"></i> MA in English Literature</li>
+                        <li><i class="fas fa-award"></i> Awarded Best Teacher 2024</li>
+                        <li><i class="fas fa-users"></i> Mentored 500+ students</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="placeholder-image large">👨‍🏫</div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>&copy; 2026 Rana Sir English Classes. Built for Excellence.</p>
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Teaching Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Senior English Teacher</h3>
+                        <p>ABC School, Kolkata (2015 - Present)</p>
+                        <p>Led curriculum development and student debate clubs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>English Lecturer</h3>
+                        <p>XYZ College (2010 - 2015)</p>
+                        <p>Specialized in Shakespeare and modern poetry.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Junior Educator</h3>
+                        <p>Local Academy (2008 - 2010)</p>
+                        <p>Focused on grammar and conversational English.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p>"Rana Sir made literature come alive! My scores improved from 60% to 95%."</p>
+                    <h4>- Priya S., Class 12</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Exceptional mentor. Helped me ace my English board exams."</p>
+                    <h4>- Arjun K., Alumni</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Patient and innovative teaching style. Highly recommended!"</p>
+                    <h4>- Parent, Rahul's Mom</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Rana Sir</h2>
+            <div class="contact-grid">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> ranasir@email.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kolkata, West Bengal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Rana Sir. All rights reserved. | Built with ❤️ by Student</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
